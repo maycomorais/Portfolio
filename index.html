@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maycon Morais</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
+        <div class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Maycon<span>Morais</span></a></div>
             <ul class="menu">
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Serviços</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Equipe</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
+            <!-- <div class="language">
+                <div class="language-selected">
+                    pt-BR
+                </div>
+                <ul>
+                    <li><a href="#" class="br">Português</a></li> 
+                    <li><a href="#" class="en">English</a></li> 
+                    <li><a href="#" class="es">Español</a></li>
+                </ul>
+            </div> -->
             <div class="menu-btn">
                 <ion-icon style="display: block" id="modal1" name="menu-outline"></ion-icon>
                 <ion-icon id="modal2" style="display: none" name="add-outline"></ion-icon>
@@ -33,8 +43,8 @@
             <div class="home-content">
                 <div class="text1">Olá, meu nome é</div>
                 <div class="text2">Maycon Morais</div>
-                <div class="text3">e eu sou <span>Developer</span></div>
-                <a href="#">Contato</a>
+                <div class="text3">e eu sou <span class="typing">Developer</span></div>
+                <a class="text4" href="#">Contato</a>
             </div>
         </div>
     </section>    
@@ -48,7 +58,7 @@
                     <img src="img/129658224_2869376346718818_2725712129321425610_n.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Sou Maycon Morais e sou <span>Developer</span></div>
+                    <div class="text">Sou Maycon Morais e sou <span class="typing-2">Developer</span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. </p>
                     <a href="#">Download CV</a>
                 </div>
@@ -63,8 +73,200 @@
             <h2 class="title">Serviços</h2>
             <div class="services-content">
                 <div class="card">
-                    <div class="box"></div>
+                    <div class="box">
+                        <ion-icon name="bug-outline"></ion-icon>
+                        <div class="text">Back-end</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id repellat odio ipsum eligendi quam.</p>
+                    </div>
                 </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                        <div class="text">Front-End</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id repellat odio ipsum eligendi quam.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-working-outline"></ion-icon>
+                        <div class="text">Full Stack</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id repellat odio ipsum eligendi quam.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão: 'especialidades' -->
+    <!-- Section: 'specialties' -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Minhas Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Minhas Habilidades e experiências</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam nulla ratione numquam, aliquid distinctio quae voluptas quia odio eaque minus fuga eum exercitationem quasi aspernatur ipsa unde aperiam in beatae laborum, accusantium ab! Sapiente consequuntur accusamus enim ad omnis, cum laboriosam magnam, beatae soluta pariatur voluptatem dignissimos quidem dolor! Ullam rem ratione minus excepturi mollitia obcaecati neque, amet maxime eveniet?</p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>74%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>ReactJS</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>61%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão/Section: Projetos/Projects -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projetos</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do Humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do Humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do Humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do Humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/projeto-1.png" alt="">
+                        <div class="text">Jogo do Humor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus saepe rem eligendi fugiat repudiandae labore!</p>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Section/Sessão: Contact/Contato -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contato</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Fale Comigo</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. </p>
+                
+                    <div class="icons">
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">Maycon Morais</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon name="earth-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Cidade</div>
+                                <div class="sub-title">Campos dos Goytacazes - RJ</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">E-mail</div>
+                                <div class="sub-title">maycomorais@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon class="wpp" name="logo-whatsapp"></ion-icon>
+                            <div class="info">
+                                <div class="head">Whatsapp</div>
+                                <div class="sub-title">(22) 99287-4147</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column rigth">
+                    <div class="text">Mensagem</div>
+                    <form action="#" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="NOME" required>
+                            </div>
+                            <div class="field email">
+                                <input type="text" placeholder="E-MAIL" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field assunto">
+                                <input type="text" placeholder="ASSUNTO" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Escrever..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> 
             </div>
         </div>
     </section>
@@ -72,7 +274,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

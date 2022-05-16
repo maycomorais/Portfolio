@@ -7,22 +7,22 @@
     text-decoration: none;
 }
 .max-width{
-    max-width: 1300px;
-    padding: 0 80px;
+    max-width: 91.25em;
+    padding: 0 5em;
     margin: auto;
 }
 /*..navbar...início*/
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 1.875em 0;
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
     background: #66306b;
-    padding: 15px 0;
+    padding: .9375em 0;
 }
 .navbar .max-width{
     display: flex;
@@ -31,7 +31,7 @@
 }
 .navbar .logo a{
     color: #ffffff;
-    font-size: 35px;
+    font-size: 2.1875em;
     font-weight: 500;
 }
 .navbar .logo a span{
@@ -51,9 +51,9 @@
 }
 .navbar .menu li a{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 1.5625em;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -64,29 +64,113 @@
 .navbar.sticky .menu li a:hover{
     color: #bbb9b9;
 }
+/* Language - Linguagem */
+/* .language {
+    position: relative;
+    width: 7.5em;
+    margin-left: 2.5em;
+    font-weight: bold;
+}
+.language-selected {
+    display: flex;   
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 1.875em;
+    height: 1.875em;
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.625em;
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+
+.language ul {
+    position: absolute;
+    width: 8.75em;
+    background-color: #111;
+    border: 1px solid #111;
+    padding-top: 0.625em;
+    box-shadow: 0em 0.0625em 0.625em rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #fff;
+    padding: 0.3125em 0.625em;
+}
+
+.language ul li:hover {
+    background-color: #66306b;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 1.5625em;
+    height: 1.5625em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 0.625em;
+}
+
+a.br:before {
+    background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
+}
+
+a.en:before {
+    background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
+}
+a.es:before {
+    background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
+}
+
+.language:hover ul {
+    display: block;
+} */
+
 /* Home Inicio */
 .home{
     display: flex;
     background: url(img/header.png) no-repeat center;
     height: 100vh;
     color: #ffffff;
-    min-height: 500px;
+    min-height: 31.25em;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 2.5em;
 }
 .home .home-content .text1{
-    font-size: 27px;
+    font-size: 1.6875em;
 }
 .home .home-content .text2{
-    font-size: 75px;
+    font-size: 4.6875em;
     font-weight: 500;
-    margin-left: -3px;
+    margin-left: -0.1875em;
 }
 .home .home-content .text3{
-    font-size: 40px;
-    margin: 5px 0;
+    font-size: 2.5em;
+    margin: 0.3125em 0;
 }
 .home .home-content .text3 span{
     color: #66306b;
@@ -96,11 +180,11 @@
     display: inline-block;
     background: #66306b;
     color: #ffffff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #66306b;
+    font-size: 1.5625em;
+    padding: 0.75em 2.25em;
+    margin-top: 1.25em;
+    border-radius: 0.375em;
+    border: 0.125em solid #66306b;
 }
 .home .home-content a:hover{
     color: #66306b;
@@ -109,23 +193,16 @@
 /* Menu Mobile */
 .menu-btn{
     color: #ffffff;
-    font-size: 23px;
+    font-size: 1.4375em;
     cursor: pointer;
     display: none;
 }
 
-/* sessão: 'sobre' / section: 'about' */
-.about{
-    font-family: 'Ubuntu', sans-serif;
+/* Todos so códigos similares - All similar codes */
+section{
     padding: 100px 0;
 }
-.about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.about .title{
+section .title{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -135,26 +212,46 @@
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 180px;
+    width: 200px;
     height: 3px;
     background-color: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Quem sou eu";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
     font-size: 20px;
     color: #66306b;
     background: #ffffff;
-    padding: 5px;
+    padding:5px;
     transform: translateX(-50%);
+}
+.about,
+.services,
+.skills,
+.projects,
+.contact{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .about-content, 
+.services .services-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sessão: 'sobre' / section: 'about' */
+.about .title::after{
+    content: "Quem sou eu";
 }
 .about .about-content .left{
     width: 45%;
@@ -177,7 +274,7 @@
     display: inline-block;
     background: #66306b;
     color: #fff;
-    font-size: 20px;
+    font-size:20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
@@ -196,21 +293,294 @@
     border-radius: 6px;
 }
 
+/* Sessão: "Serviços" - Section: "Services */
+.services, .projects{
+    background: #111;
+    color: #fff;
+}
+.services h2,
+.projects h2{
+    font-weight: 500;
+    color: #fff;
+}
+.services .title::before,
+.projects .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    font-weight: 600;
+    content: "Que ofereço";
+}
+.services .services-content .card{
+    width: calc(35% - 10%);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .services-content .card:hover{
+    background: #66306b;
+}
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .services-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .services-content .card ion-icon{
+    font-size: 50px;
+    color: #66306b;
+    transition: all 0.3s ease;
+}
+.services .services-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .services-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10 0 7px 0 ;
+}
+/* Sessão/Section: Especialidades/Specialties */
+.skills .title::after{
+    content: "O que eu sei";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #66306b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #66306b;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #66306b;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #66306b;
+}
+.skills .skills-content .right .html::before{
+    width: 78%;
+}
+.skills .skills-content .right .css::before{
+    width: 82%;
+}
+.skills .skills-content .right .js::before{
+    width: 74%;
+}
+.skills .skills-content .right .react::before{
+    width: 45%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 61%;
+}
+
+/* Sessão/Section: Projetos/Projects */
+
+.projects .title::after{
+    content: "Que desenvolvi";
+    background-color: #111;
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: #66306b;
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 90px;
+    border: 5px solid #66306b;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #66306b!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #66306b!important;
+}
+
+/* Section/Sessão: Contact/Contato */
+.contact .title::after{
+    content: "Fale comigo";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .contact-content .row ion-icon{
+    font-size: 25px;
+    color: #66306b;
+}
+.contact .contact-content .row .wpp{
+    color: green;
+}
+.contact .rigth form .fields{
+    display: flex;
+}
+.contact .rigth form .fields,
+.contact .rigth form .fields .field{
+    width: 100%;
+    height: 45%;
+    margin-bottom: 15px;
+}
+.contact .rigth form .fields input,
+.contact .rigth form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .rigth form .name{
+    margin-right: 10px;
+}
+.contact .rigth form .email{
+    margin-left: 10px;
+}
+.contact .rigth form .textarea{
+    width: 100%;
+    height: 80px;
+}
+.contact .rigth form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+    margin-top: 20px;
+}
+
+
 /* responsividade - responsiveness */
 @media (max-width: 1300px){
     .navbar .max-width{
         margin-left: 0;
     }
+    .services .services-content .card{
+        width: calc(35% - 10%);
+        margin-bottom: 20px;
+    }
+    
 }
 @media (max-width: 1104px){
     .about .about-content .left img{
         width: 350px;
         height: 350px;
     }
+    .services .services-content .card{
+        width: calc(41% - 10%);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 991px){
     .navbar .max-width{
         padding:0 50px;
+    }
+    .services .services-content .card{
+        width: calc(40% - 10%);
+        margin-bottom: 20px;
     }
 }
 @media (max-width:947px){
@@ -264,6 +634,14 @@
     .about .about-content .right{
         flex: 100%;
     }
+    .services .services-content .card{
+        width: calc(58.5% - 10%);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 @media (max-width:690px){
     .home .home-content .text2{
@@ -276,6 +654,10 @@
         font-size: 20px;
         padding: 10px 30px;
     }
+    .services .services-content .card{
+        width: 100%;
+    }
+    
 }
 @media (max-width:500px){
     .home .home-content .text2{
@@ -284,4 +666,9 @@
     .home .home-content .text3{
         font-size: 27px;
     }
+    .services .services-content{
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
