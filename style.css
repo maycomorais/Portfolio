@@ -519,13 +519,14 @@ section .title::after{
 .contact .rigth form .fields{
     display: flex;
 }
-.contact .rigth form .fields,
-.contact .rigth form .fields .field{
+.contact .rigth form .fields .field,
+.contact .rigth form .field{
     width: 100%;
-    height: 45%;
+    height: 45px;
     margin-bottom: 15px;
 }
 .contact .rigth form .fields input,
+.contact .rigth form .field input,
 .contact .rigth form .textarea textarea{
     width: 100%;
     height: 100%;
@@ -550,6 +551,51 @@ section .title::after{
     padding-top: 10px;
     resize: none;
     margin-top: 20px;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.button-area{
+    display: flex;
+    align-items: center;
+}
+.button-area button{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #66306b;
+    border: 2px solid #66306b;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+.button-area button:hover{
+    color: #66306b;
+    background: none;
+}
+
+/* Section/Sessão: Footer */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer span a{
+    color: #66306b;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer span a:hover{
+    text-decoration: underline;
 }
 
 
