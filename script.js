@@ -23,37 +23,41 @@ $(document).ready(function(){
             modal2.css('display', 'none')
         };
     });
+
+    // Owl Carousel Script
     $('.carousel').owlCarousel({
-        margin:20,
-        loop:true,
-        autoplayTimeOut:2000,
-        autoplayHoverPauser:true,
-        responsive:{
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
             0:{
-                item:1,
-                nav:false
+                items: 1,
+                nav: false
             },
             600:{
-                item:2,
-                nav:false
+                items: 2,
+                nav: false
             },
             1000:{
-                item:3,
-                nav:false
+                items: 3,
+                nav: false
             }
         }
     });
 
+
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Front-end", "Back-end", "Full Stack", "Design"],
+        strings: ["Developer", "Front-end", "Back-end", "Full Stack", "Designer"],
         typeSpeed: 100,
-        backSpeed: 65,
+        backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Front-end", "Back-end", "Full Stack", "Design"],
+        strings: ["Developer", "Front-end", "Back-end", "Full Stack", "Designer"],
         typeSpeed: 100,
-        backSpeed: 65,
+        backSpeed: 60,
         loop: true
     });
     

@@ -313,7 +313,7 @@ section .title::after{
     content: "Que ofereço";
 }
 .services .services-content .card{
-    width: calc(35% - 10%);
+    width: calc(33% - 10%);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -415,6 +415,9 @@ section .title::after{
 .skills .skills-content .right .mysql::before{
     width: 61%;
 }
+.skills .skills-content .right .ps::before{
+    width: 91%;
+}
 
 /* Sessão/Section: Projetos/Projects */
 
@@ -437,6 +440,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    text-decoration: none;
 }
 .projects .carousel .card img{
     width: 150px;
@@ -456,8 +460,28 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
+.projects .carousel .card .box button{
+    font-size: 20px;
+    background: #66306b;
+    color: #fff;
+    font-size:20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #222;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card .box button:hover{
+    background: #2d162f;
+}
 .projects .carousel .card:hover .box{
     transform: scale(1.05);
+}
+/* Dots under section Projects / Dots abaixo da sessão Projetos */
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
 }
 .owl-dot{
     height: 13px;
@@ -484,13 +508,16 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.row .info a{
+    text-decoration: none;
+}
 .contact .contact-content .left p{
     text-align: justify;
-}
-.contact .contact-content .left .text{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -516,18 +543,18 @@ section .title::after{
 .contact .contact-content .row .wpp{
     color: green;
 }
-.contact .rigth form .fields{
+.contact .right form .fields{
     display: flex;
 }
-.contact .rigth form .fields .field,
-.contact .rigth form .field{
+.contact .right form .fields .field,
+.contact .right form .field{
     width: 100%;
     height: 45px;
     margin-bottom: 15px;
 }
-.contact .rigth form .fields input,
-.contact .rigth form .field input,
-.contact .rigth form .textarea textarea{
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
     width: 100%;
     height: 100%;
     border: 1px solid #ccc;
@@ -536,25 +563,23 @@ section .title::after{
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Ubuntu', sans-serif;
-}
-.contact .rigth form .name{
-    margin-right: 10px;
-}
-.contact .rigth form .email{
-    margin-left: 10px;
-}
-.contact .rigth form .textarea{
-    width: 100%;
-    height: 80px;
-}
-.contact .rigth form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
     border-color: #b3b3b3;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .textarea{
+    width: 100%;
+    height: 80px;
 }
 .button-area{
     display: flex;
@@ -715,6 +740,44 @@ footer span a:hover{
     .services .services-content{
         justify-content: center;
         align-items: center;
+    }
+
+    .contact .fields{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .contact .field{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .contact .contact-content .column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } 
+    
+    
+    
+    
+    
+}
+@media (max-width:400px){
+    .about .title::after{
+        font-size: 18px;
+    }
+    .services .title::after{
+        font-size: 18px;
+    }
+    .skills .title::after{
+        font-size: 18px;
+    }
+    .projects .title::after{
+        font-size: 16px;
+    }
+    .contact .title::after{
+        font-size: 18px;
     }
     
 }
