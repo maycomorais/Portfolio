@@ -757,11 +757,6 @@ footer span a:hover{
         flex-direction: column;
         width: 100%;
     } 
-    
-    
-    
-    
-    
 }
 @media (max-width:400px){
     .about .title::after{
