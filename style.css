@@ -156,7 +156,6 @@ a.es:before {
     color: #ffffff;
     min-height: 31.25em;
     background-attachment: fixed;
-    object-fit: cover;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
