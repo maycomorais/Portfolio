@@ -64,6 +64,14 @@ $(document).ready(function(){
             1000:{
                 items: 3,
                 nav: false
+            },
+            1300:{
+                items: 4,
+                nav: false
+            },
+            1400:{
+                items: 5,
+                nav: false
             }
         }
     });

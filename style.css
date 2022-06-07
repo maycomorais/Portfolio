@@ -368,10 +368,6 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.skills-carousel .card:hover{
-    background: none;
-    border: 2px solid #66306b;
-}
 .skills-carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -380,9 +376,6 @@ section .title::after{
     transition: all 0.3s ease;
     color: #fff;
     font-family: "Ubuntu";
-}
-.skills-carousel .card .box:hover{
-    color: #66306b;
 }
 .skills-carousel .card .box ion-icon{
     font-size: 40px;
