@@ -272,16 +272,27 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right a{
-    display: inline-block;
+    display: inline-flex;
     background: #66306b;
     color: #fff;
+    width: 220px;
     font-size:20px;
     font-weight: 500;
     padding: 10px 30px;
+    margin-right: 10px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #66306b;
     transition: all 0.3s ease;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-content .right a ion-icon{
+    justify-content: center;
+    font-size: 25px;
+    padding-right: 5px;
+    align-items: center;
 }
 .about .about-content .right a:hover{
     color: #66306b;
@@ -345,6 +356,45 @@ section .title::after{
     margin: 10 0 7px 0 ;
 }
 /* Sessão/Section: Especialidades/Specialties */
+.skills-carousel{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.skills-carousel .card{
+    background: #66306b;
+    border-radius: 6px;
+    padding: 25px 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.skills-carousel .card:hover{
+    background: none;
+    border: 2px solid #66306b;
+}
+.skills-carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-family: "Ubuntu";
+}
+.skills-carousel .card .box:hover{
+    color: #66306b;
+}
+.skills-carousel .card .box ion-icon{
+    font-size: 40px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+}
+.skills-carousel .card .box:hover ion-icon{
+    transform: scale(1.5);
+}
+.skills-carousel .card .box p{
+    font-weight: 800;
+}
 .skills .title::after{
     content: "O que eu sei";
 }
@@ -411,7 +461,7 @@ section .title::after{
     width: 74%;
 }
 .skills .skills-content .right .react::before{
-    width: 45%;
+    width: 68%;
 }
 .skills .skills-content .right .mysql::before{
     width: 61%;
@@ -472,6 +522,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #222;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 .projects .carousel .card .box button:hover{
     background: #2d162f;
@@ -513,12 +564,21 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: 'Ubuntu';
 }
-.row .info a{
+.row .info{
+    font-family: 'Ubuntu';
     text-decoration: none;
+}
+.row .info a .head2,
+.row .info .sub-title2{
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
 }
 .contact .contact-content .left p{
     text-align: justify;
+    font-family: 'Ubuntu';
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
