@@ -377,12 +377,14 @@ section .title::after{
     color: #fff;
     font-family: "Ubuntu";
 }
-.skills-carousel .card .box ion-icon{
+.skills-carousel .card .box ion-icon,
+.skills-carousel .card .box i{
     font-size: 40px;
     padding-bottom: 15px;
     transition: all 0.3s ease;
 }
-.skills-carousel .card .box:hover ion-icon{
+.skills-carousel .card .box:hover ion-icon,
+.skills-carousel .card:hover .box i{
     transform: scale(1.5);
 }
 .skills-carousel .card .box p{
@@ -547,6 +549,18 @@ section .title::after{
 }
 
 /* Section/Sessão: Contact/Contato */
+.card-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.card-container .box a{
+    color: #66306b;
+    font-size: 50px;
+    text-decoration: none;
+}
 .contact .title::after{
     content: "Fale comigo";
 }
