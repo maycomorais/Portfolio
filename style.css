@@ -383,8 +383,16 @@ section .title::after{
     padding-bottom: 15px;
     transition: all 0.3s ease;
 }
+.skills-carousel .card .box img {
+    height: 55px;
+    width: 40px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+    filter: invert(100%);
+}
 .skills-carousel .card .box:hover ion-icon,
-.skills-carousel .card:hover .box i{
+.skills-carousel .card:hover .box i,
+.skills-carousel .card:hover .box img {
     transform: scale(1.5);
 }
 .skills-carousel .card .box p{
@@ -447,19 +455,22 @@ section .title::after{
     background: #66306b;
 }
 .skills .skills-content .right .html::before{
-    width: 78%;
+    width: 88%;
 }
 .skills .skills-content .right .css::before{
-    width: 82%;
+    width: 86%;
+}
+.skills .skills-content .right .ts::before{
+    width: 79%;
 }
 .skills .skills-content .right .js::before{
-    width: 74%;
+    width: 81%;
 }
 .skills .skills-content .right .react::before{
-    width: 68%;
+    width: 78%;
 }
 .skills .skills-content .right .mysql::before{
-    width: 61%;
+    width: 79%;
 }
 .skills .skills-content .right .ps::before{
     width: 91%;
